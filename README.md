@@ -76,3 +76,14 @@ When this conventions are followed, the file automatically becomes available as 
    - Avoiding potential naming conflicts with future Next.js file naming conventions
    - If you actually want an underscore in your URL, use `%5F` instead. That's just the
      URL-encoded version of underscore
+
+## Route Group
+
+1.  Let us logically organize our routes and project files without impacting the URL structure.
+2.  Implemented authentication routes
+    - Register
+    - Login
+    - Forgot password
+3.  To group the routes the parents folder should be within the `()`.\
+4.  Folder Structure ![alt text](image-2.png)
+5.  Now the routes can be access directly `example.com/login, example.com/register, example.com/forgot-password` instead of `example.com/auth/login, example.com/auth/register, example.com/auth/forgot-password`
