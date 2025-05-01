@@ -87,3 +87,14 @@ When this conventions are followed, the file automatically becomes available as 
 3.  To group the routes the parents folder should be within the `()`.\
 4.  Folder Structure ![alt text](image-2.png)
 5.  Now the routes can be access directly `example.com/login, example.com/register, example.com/forgot-password` instead of `example.com/auth/login, example.com/auth/register, example.com/auth/forgot-password`
+
+## Layout
+
+1. Pages are route-specific UI components
+2. A layout is a UI that is shared between multiple pages in your app
+
+   ### How to create a layout?
+
+   1. `Default export a React component from a layout.js or layout.tsx file`
+   2. That component takes a children prop which Next.js will populate with your page content
+   3. At root level the layout.tsx or layout.jsx is mandatory
