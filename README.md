@@ -57,3 +57,9 @@ When this conventions are followed, the file automatically becomes available as 
 1. If the given route does not exist then we can define the custom 404 page
    by adding file inside app folder app/not-found.tsx
 2. App Router: Add app/not-found.tsx (or segment-scoped not-found.tsx), and use notFound() for programmatic control.
+
+## File Colocation
+
+1. File colocation is simply the practice of “keeping together what belongs together” in your project’s folder structure.
+2. In case of Next Js the routes becomes publicly accessible when a `page.tsx` file is added and
+   it should be exported as a default component.
