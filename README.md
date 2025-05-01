@@ -63,3 +63,16 @@ When this conventions are followed, the file automatically becomes available as 
 1. File colocation is simply the practice of “keeping together what belongs together” in your project’s folder structure.
 2. In case of Next Js the routes becomes publicly accessible when a `page.tsx` file is added and
    it should be exported as a default component.
+
+## Private Folder
+
+1. A way to tell Next.js. this folder is just for internal stuffs- don't include it in the routing system
+2. The folder and all its sub folders are excluded from routing
+3. `Add an underscore at the start of the folder name`
+4. Private folders are super useful for a bund of things:
+   - Keeping the UI logic separate from routing logic
+   - Having a consistent way to organize internal files in the project
+   - Making it easier to group related files in code editor
+   - Avoiding potential naming conflicts with future Next.js file naming conventions
+   - If you actually want an underscore in your URL, use `%5F` instead. That's just the
+     URL-encoded version of underscore
