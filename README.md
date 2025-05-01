@@ -43,3 +43,11 @@ When this conventions are followed, the file automatically becomes available as 
 ## Nested Dynamic routes
 
 1.  Next.js (both Pages Router and App Router), you can nest dynamic segments simply by stacking folders (or files) named with square brackets. This lets you capture multiple levels of URL parameters.
+
+## Catch-all segments
+
+![alt text](image.png)
+
+### Folder Structure
+
+![alt text](image-1.png)
