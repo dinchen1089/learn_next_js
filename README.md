@@ -51,3 +51,9 @@ When this conventions are followed, the file automatically becomes available as 
 ### Folder Structure
 
 ![alt text](image-1.png)
+
+## Not Found
+
+1. If the given route does not exist then we can define the custom 404 page
+   by adding file inside app folder app/not-found.tsx
+2. App Router: Add app/not-found.tsx (or segment-scoped not-found.tsx), and use notFound() for programmatic control.
