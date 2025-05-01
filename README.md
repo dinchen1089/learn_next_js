@@ -39,3 +39,7 @@ When this conventions are followed, the file automatically becomes available as 
 ## Dynamic Route
 
 1. In Next.js you can create dynamic routes simply by naming folders or files with square-bracket syntax. The framework will match those segments at request time and hand you the values as “route parameters.”
+
+## Nested Dynamic routes
+
+1.  Next.js (both Pages Router and App Router), you can nest dynamic segments simply by stacking folders (or files) named with square brackets. This lets you capture multiple levels of URL parameters.
