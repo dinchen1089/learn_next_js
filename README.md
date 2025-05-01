@@ -25,4 +25,13 @@
   React components by dividing them into two distinct types:
 
   - Server components
+    - By Default all components are treated as server components
   - Client components
+
+## Routing conventions
+
+1. All routes must live inside the app folder
+2. Route files must be named either page.js or page.jsx
+3. Each folder represent a segment of the url path
+
+When this conventions are followed, the file automatically becomes available as a route.
