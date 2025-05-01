@@ -18,3 +18,11 @@
 - 5. Styling
 - 6. Optimization
 - 7. Dev and prod build system
+
+## React Server Component (RSC)
+
+- This architecture introduces a new approach of creating
+  React components by dividing them into two distinct types:
+
+  - Server components
+  - Client components
