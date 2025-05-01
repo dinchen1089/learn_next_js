@@ -35,3 +35,7 @@
 3. Each folder represent a segment of the url path
 
 When this conventions are followed, the file automatically becomes available as a route.
+
+## Dynamic Route
+
+1. In Next.js you can create dynamic routes simply by naming folders or files with square-bracket syntax. The framework will match those segments at request time and hand you the values as “route parameters.”
