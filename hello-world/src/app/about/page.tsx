@@ -1,7 +1,12 @@
 import React from "react";
 
-function Profile() {
+export const metadata = {
+  title: "About Dinchen Tamang",
+  description: "Best coder/developer in the world",
+};
+
+function About() {
   return <h1>Profile</h1>;
 }
 
-export default Profile;
+export default About;

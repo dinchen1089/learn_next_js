@@ -120,3 +120,20 @@ When this conventions are followed, the file automatically becomes available as 
 2. Apply layout selectively to the part of the application
    ![alt text](image-4.png)
 3. In the example above the layout for auth is applied only in login and register route and similarly the layout for marketing route is applied only to customer and revenue route.
+
+## Routing Metadata for Search Engine Optimization
+
+1. The metadata AOI in Next.js is a powerful feature that lets us define metadata for each page
+2. Metadata ensures out content looks great when its shared or indexed by search engines
+3. Two ways to handle metadata in layout.tex or page.tsx files
+
+   - Export a static meta data object
+   - Export a dynamic generateMetadata function
+   - It is not possible to use static and dynamic metadata in the same segment/page/layout
+
+   ### Configuring Meta data
+
+   1. Both layout.tsx and page.tsx can export metadata. Layout metadata applies to all its pages, while page metadata is specific to that page
+   2. Metadata follows a top-down order, starting from the root level
+   3. When metadata exist in multiple places along a route, they merge together, with page metadata overriding layout metadata for matching properties
+   4. It will `not work in the page that are mark as client directive i.e component marked with use client`
