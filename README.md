@@ -137,3 +137,13 @@ When this conventions are followed, the file automatically becomes available as 
    2. Metadata follows a top-down order, starting from the root level
    3. When metadata exist in multiple places along a route, they merge together, with page metadata overriding layout metadata for matching properties
    4. It will `not work in the page that are mark as client directive i.e component marked with use client`
+
+   ### Title field in Metadata
+
+   1. More control
+   2. Need to import `Metadata` type from next
+      1. It has object that have key as
+         1. default - // fallback if no title is provided by a page
+         2. template - // `%s - MyWebsite` `%s` will be replaced by the page’s overridden title
+         3. absolute - If you need to bypass the template entirely on certain pages, you can pass an absolute title
+   3. If you have a root layout.tsx with that descriptor, any nested page can still override just its part
