@@ -98,3 +98,18 @@ When this conventions are followed, the file automatically becomes available as 
    1. `Default export a React component from a layout.js or layout.tsx file`
    2. That component takes a children prop which Next.js will populate with your page content
    3. At root level the layout.tsx or layout.jsx is mandatory
+
+## Nested Layout
+
+1. Nested layouts let you co-locate and compose UI “shells” at any level of your route hierarchy. Each folder in /app can have its own layout.tsx (or .jsx) and those layouts automatically wrap all child routes and layouts beneath them.
+2. /app
+   - ├── layout.tsx ← root layout (HTML, <body>, global nav, etc.)
+   - ├── page.tsx ← renders at “/”
+   - ├── dashboard/ ← all routes under “/dashboard”
+   - │ ├── layout.tsx ← dashboard-specific shell (sidebar, sub-nav)
+   - │ ├── page.tsx ← renders at “/dashboard”
+   - │ └── settings/
+   - │ ├── layout.tsx ← settings-specific shell (tabs)
+   - │ └── page.tsx ← renders at “/dashboard/settings”
+   - └── about/
+   - └── page.tsx ← “/about”
