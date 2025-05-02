@@ -113,3 +113,10 @@ When this conventions are followed, the file automatically becomes available as 
    - │ └── page.tsx ← renders at “/dashboard/settings”
    - └── about/
    - └── page.tsx ← “/about”
+
+## Multiple Root layout
+
+1. Makes use of the route group
+2. Apply layout selectively to the part of the application
+   ![alt text](image-4.png)
+3. In the example above the layout for auth is applied only in login and register route and similarly the layout for marketing route is applied only to customer and revenue route.
