@@ -154,3 +154,7 @@ When this conventions are followed, the file automatically becomes available as 
    - click on links
    - get redirected after certain actions
    - `replace` in Link replace the existing page and user will be directed to the root route
+
+## Styling Active Link;
+
+- Based on the link that is current in based on `usePathName` styles can be applied
