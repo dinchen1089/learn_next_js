@@ -147,3 +147,10 @@ When this conventions are followed, the file automatically becomes available as 
          2. template - // `%s - MyWebsite` `%s` will be replaced by the page’s overridden title
          3. absolute - If you need to bypass the template entirely on certain pages, you can pass an absolute title
    3. If you have a root layout.tsx with that descriptor, any nested page can still override just its part
+
+## Link `UI Navigation` `<Link>` component
+
+1. Users
+   - click on links
+   - get redirected after certain actions
+   - `replace` in Link replace the existing page and user will be directed to the root route
