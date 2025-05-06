@@ -1,5 +1,4 @@
-import { notFound } from "next/navigation";
-import React from "react";
+import { notFound, redirect } from "next/navigation";
 
 async function ProductReview({
   params,
@@ -7,8 +6,10 @@ async function ProductReview({
   params: Promise<{ productId: string; reviewId: string }>;
 }) {
   const { productId, reviewId } = await params;
+
   if (parseInt(reviewId) > 100) {
-    notFound();
+    redirect("/products");
+    //  notFound();
   }
   return (
     <div>

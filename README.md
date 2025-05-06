@@ -166,3 +166,10 @@ When this conventions are followed, the file automatically becomes available as 
 - While params and search params can be access by making the component async for a client component
   the params and searchParams must be wrapped within the `use` hook of react
 - `Note:` While `page.tsx` has access to both `params` and `searchParams`, `layout.tsx` only has access to `params`
+
+## Navigation Programmatically using `"next/navigation"`
+
+- Next js navigation provides with some hooks
+  1.  useRouter - User router returns a router and can only be used in the client component, it provides function
+      like push, replace, forward, back which can be use to programmatically navigate to the page
+  2.  redirect - Can be used to redirect to a certain route
