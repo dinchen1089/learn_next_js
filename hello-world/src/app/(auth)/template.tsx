@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import "../../../globals.css";
+import { useState } from "react";
 
 // export const metadata: Metadata = {
 //   title: "Create Next App",
@@ -24,25 +25,27 @@ export default function AuthLayout({
   children: React.ReactNode;
 }>) {
   const pathName = usePathname();
+  const [input, setInput] = useState("");
   console.log(pathName);
   return (
-    <html lang="en">
-      <body>
-        {navLinks.map((link) => {
-          const isActive =
-            pathName.startsWith(link.href.toLowerCase()) && link.href !== "/";
-          return (
-            <Link
-              href={link.href}
-              key={link.name}
-              className={isActive ? "font-bold mr-4  text-2xl" : "mr-4"}
-            >
-              {link.name}
-            </Link>
-          );
-        })}
-        {children}
-      </body>
-    </html>
+    <div>
+      <div>
+        <input value={input} onChange={(e) => setInput(e.target.value)} />
+      </div>
+      {navLinks.map((link) => {
+        const isActive =
+          pathName.startsWith(link.href.toLowerCase()) && link.href !== "/";
+        return (
+          <Link
+            href={link.href}
+            key={link.name}
+            className={isActive ? "font-bold mr-4  text-2xl" : "mr-4"}
+          >
+            {link.name}
+          </Link>
+        );
+      })}
+      {children}
+    </div>
   );
 }

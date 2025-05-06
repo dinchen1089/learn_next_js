@@ -173,3 +173,18 @@ When this conventions are followed, the file automatically becomes available as 
   1.  useRouter - User router returns a router and can only be used in the client component, it provides function
       like push, replace, forward, back which can be use to programmatically navigate to the page
   2.  redirect - Can be used to redirect to a certain route
+
+## Template File
+
+1. Create a template by exporting a default React component from a `template.js` or `template.tsx` file
+2. Like layout, templated need to accept children prop to render the nested route segments
+3. Templates are similar to layout in that they are also UI shared between multiple pages in your app
+4. Whenever a user navigates between routes sharing a template, you get a completely fresh start.
+
+   - A new template component instance is mounted
+   - DOM elements ar recreated
+   - state is cleared
+   - effects are re-synchronized
+
+5. Layout and template file can be used together
+   ![alt text](image-5.png)
