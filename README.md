@@ -198,3 +198,8 @@ When this conventions are followed, the file automatically becomes available as 
      - This makes your app feel snappy and responsive, and users know their click actually did something.
    - Next.js keeps shared layout interactive while new content loads
      - User can still use thing like navigation menus or sidebars even if the main content isn't ready yet
+
+## Error handling using `error.tsx` file
+
+1. It automatically wraps route segments and their nested children in a React Error Boundary.
+2. A custom error UIs for a specific segments can be create using the file system
