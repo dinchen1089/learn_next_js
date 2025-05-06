@@ -188,3 +188,13 @@ When this conventions are followed, the file automatically becomes available as 
 
 5. Layout and template file can be used together
    ![alt text](image-5.png)
+
+## Loading UI `loading.tsx`
+
+1. `loading.tsx` help us create loading states that users see while waiting for content to load in a specific route segment
+2. The loading states appear instantly when navigating, letting user know that the application is responsive and actively loading content
+3. Benefits :
+   - It gives user immediate feedback when they navigate somewhere new.
+     - This makes your app feel snappy and responsive, and users know their click actually did something.
+   - Next.js keeps shared layout interactive while new content loads
+     - User can still use thing like navigation menus or sidebars even if the main content isn't ready yet

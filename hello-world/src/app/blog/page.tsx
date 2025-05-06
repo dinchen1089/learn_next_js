@@ -7,7 +7,13 @@ export const metadata: Metadata = {
   description: "Best coder/developer in the world",
 };
 
-const Blog = () => {
+const Blog = async () => {
+  await new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("Intentional delay");
+    }, 2000);
+  });
+
   return (
     <div>
       <h1>Blog</h1>
