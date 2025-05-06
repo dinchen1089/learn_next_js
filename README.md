@@ -158,3 +158,11 @@ When this conventions are followed, the file automatically becomes available as 
 ## Styling Active Link;
 
 - Based on the link that is current in based on `usePathName` styles can be applied
+
+## Params & Search Params
+
+- `params` is a promise that resolved to an object containing the dynamic route parameters (like id)
+- `searchParams` is a promise that resolved to an object containing the query parameters (like filters and sorting)
+- While params and search params can be access by making the component async for a client component
+  the params and searchParams must be wrapped within the `use` hook of react
+- `Note:` While `page.tsx` has access to both `params` and `searchParams`, `layout.tsx` only has access to `params`
