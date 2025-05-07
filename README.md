@@ -205,3 +205,10 @@ When this conventions are followed, the file automatically becomes available as 
 2. A custom error UIs for a specific segments can be create using the file system
 
 ## Recovering from error
+
+## Handling errors in nested routes
+
+1. Error always bubble up to find the closest parent error boundary.
+2. An error.tsx file handles errors not just for its own folder, but for all the nested child
+   segment below it too.
+3. By strategically placing error.tsx file at different levels in your route folders, you can control exactly how detailed your error handling gets
