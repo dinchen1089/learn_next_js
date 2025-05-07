@@ -212,3 +212,15 @@ When this conventions are followed, the file automatically becomes available as 
 2. An error.tsx file handles errors not just for its own folder, but for all the nested child
    segment below it too.
 3. By strategically placing error.tsx file at different levels in your route folders, you can control exactly how detailed your error handling gets
+
+
+## Handling error in layouts
+
+1. The error boundary won't catch errors thrown in layout.tsx within the same segment because of how the 
+   component hierarchy works.
+2. The layout actually sits above the error boundary in the component tree
+
+
+
+
+
