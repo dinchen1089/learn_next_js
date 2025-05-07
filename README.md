@@ -203,3 +203,5 @@ When this conventions are followed, the file automatically becomes available as 
 
 1. It automatically wraps route segments and their nested children in a React Error Boundary.
 2. A custom error UIs for a specific segments can be create using the file system
+
+## Recovering from error
