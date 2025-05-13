@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import { ErrorWrapper } from "./error-wrapper";
+
 export const metadata: Metadata = {
   title: {
     default: "Next js Tutorial", // fallback
@@ -18,7 +20,7 @@ export default function RootLayout({
         <header>
           <h1> Header</h1>
         </header>
-        {children}
+        <ErrorWrapper>{children}</ErrorWrapper>
         <footer>
           <h1> footer</h1>
         </footer>

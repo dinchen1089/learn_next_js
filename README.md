@@ -213,14 +213,17 @@ When this conventions are followed, the file automatically becomes available as 
    segment below it too.
 3. By strategically placing error.tsx file at different levels in your route folders, you can control exactly how detailed your error handling gets
 
-
 ## Handling error in layouts
 
-1. The error boundary won't catch errors thrown in layout.tsx within the same segment because of how the 
+1. The error boundary won't catch errors thrown in layout.tsx within the same segment because of how the
    component hierarchy works.
 2. The layout actually sits above the error boundary in the component tree
 
+## Handling global errors
 
-
-
-
+1. If an error boundary can't catch errors in the layout.tsx file from the same segment, what about the error in the root layout?
+2. It doesn't have a parent segment - how do we hand those errors?
+3. `Next.js` provides a special file called `global-error.tsx` that goes in your root app directory.
+4. This is your last line of defense when something goes catastrophically wrong at the highest level of your app.
+   - Works only in production mode
+   - requires html and body tags to be rendered
